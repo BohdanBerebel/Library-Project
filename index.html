@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>Welcome to my amazing mini-library</header>
-    <nav>To be continued</nav>
+    <header><p>Welcome to my amazing mini-library</p></header>
+    <nav><p>To be continued...</p></nav>
     <main>
-        The list of embraced literature:
-        <div id="library"></div>
+        <div>The list of embraced literature:</div>
+        <div id="display">
+            <div id="library"></div>
+            <div id="table"></div>
+        </div>
         <button>Add a new book</button>
     </main>
     <footer>❤Forever young...❤</footer>
@@ -19,15 +22,15 @@
         <form action="">
             <div>
             <label for="author">Author:</label>
-            <input type="text" id="author" placeholder="author" autofocus>
+            <input type="text" id="author" placeholder="author" autofocus required>
             </div>
             <div>
             <label for="title">Title:</label>
-            <input type="text" id="title" placeholder="title">
+            <input type="text" id="title" placeholder="title" required>
             </div>
             <div>
             <label for="pages">Number of pages:</label>
-            <input type="number" id="pages" placeholder="number of pages">
+            <input type="number" id="pages" placeholder="number of pages" required>
             </div>
             <div>
                 <label for="read">It's been read:</label>
