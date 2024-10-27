@@ -147,7 +147,7 @@ const protection = (function() {
     
     dialogButton.addEventListener('click', (e) => {
         e.preventDefault();
-        if (inputAuthor.value == false || inputTitle.value == false || inputPages.value == false) return alert("Empty line is unaccessible")
+        if (inputAuthor.value == false || inputTitle.value == false || inputPages.value == false) return alert("Empty line is unacceptable")
         new CreateNewBook(inputAuthor.value, inputTitle.value, inputPages.value, inputRead.value);
         CreateNewBook.launchLibrary();
         inputAuthor.value = "";
